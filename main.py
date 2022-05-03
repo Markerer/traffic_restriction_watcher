@@ -1,7 +1,7 @@
 from pathlib import Path
-from kml_processor import KMLProcessor
-from inspector import CoordinateInspector
-from shapes import Rectangle
+from trw.kml_processor import KMLProcessor
+from trw.inspector import CoordinateInspector
+from trw.shapes import Rectangle
 import numpy as np
 
 if __name__ == '__main__':

@@ -1,4 +1,4 @@
-from shapes import Polygon
+from trw.shapes import Polygon
 import numpy as np
 
 
