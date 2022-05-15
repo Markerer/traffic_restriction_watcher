@@ -19,11 +19,10 @@ class KMLProcessor:
     def _check_init_and_function_path(self, path: Union[Path, None]) -> Path:
         if path is not None:
             return path
+        if self._path is None:
+            raise NoPathProvidedException
         else:
-            if self._path is None:
-                raise NoPathProvidedException
-            else:
-                return self._path
+            return self._path
 
     def _check_kml_object(self):
         if self.kml_object is None:
